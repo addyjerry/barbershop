@@ -1,0 +1,166 @@
+#Home {
+  font-size: 2rem;
+  display: flex;
+  gap: 2rem;
+  background-color: rgb(252, 195, 125);
+}
+#Home #writing {
+  width: 30rem;
+  margin-top: 3rem;
+}
+#Home #googlemap {
+  width: 35rem;
+  height: 20rem;
+  margin-top: 2rem;
+}
+#Home #location {
+  margin-top: 3rem;
+}
+#Works {
+  margin-top: 10rem;
+  font-size: 2rem;
+  display: flex;
+  gap: 5rem;
+}
+#Works #text__area {
+  width: 30rem;
+}
+#Works #image__area {
+  margin: 4px;
+  display: flex;
+  width: 45.5rem;
+  overflow: hidden;
+}
+#contact__area {
+  display: none;
+}
+#Works #images {
+  margin: 2px;
+  animation: image_animation infinite 6s;
+}
+@keyframes image_animation {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-80rem);
+  }
+}
+#images p {
+  text-align: center;
+}
+#images img {
+  border-radius: 8px;
+  width: 20rem;
+  height: 20rem;
+}
+
+/** Mobile devices**/
+/** MEDIA QUERIES **/
+@media (max-width: 600px) {
+  #Home {
+    font-size: 1rem;
+    display: block;
+    background-color: rgb(252, 195, 125);
+  }
+  #Home #writing {
+    width: 100%;
+    margin-top: 0rem;
+    text-align: center;
+  }
+  #Home #googlemap {
+    width: 100%;
+    height: 15rem;
+    margin-top: 2rem;
+  }
+
+  #Works {
+    margin-top: 7rem;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+  }
+  #Works #text__area {
+    width: 100%;
+  }
+  #Works #image__area {
+    margin: 4px;
+    display: flex;
+    width: 97%;
+    overflow: hidden;
+  }
+  #images img {
+    border-radius: 8px;
+    width: 10rem;
+    height: 10rem;
+  }
+  @keyframes image_animation {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-40rem);
+    }
+  }
+  #contact__area {
+    display: block;
+    position: fixed;
+    left: 70%;
+    bottom: 10%;
+    place-items: center;
+    text-align: center;
+    z-index: 3;
+  }
+  #contact_icon {
+    background-color: white;
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+    place-items: center;
+    text-align: center;
+    z-index: 3;
+    padding: 8.1px;
+    font-size: 1.7rem;
+  }
+  #contact__text {
+    background-color: white;
+    width: 6rem;
+    font-size: 1rem;
+    place-items: center;
+    text-align: center;
+    z-index: 3;
+    padding: 8.1px;
+    border-radius: 8px;
+  }
+  #contact {
+    display: block;
+    position: fixed;
+    left: 75%;
+    bottom: 23%;
+    z-index: 3;
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+ 
+  }
+  #icons {
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px;
+    padding: 6px;
+ 
+  }
+  #whatsapp {
+    color: green;
+  }
+  #call {
+    color: green;
+  }
+  #twitter {
+    color: rgb(248, 119, 33);
+  }
+}
